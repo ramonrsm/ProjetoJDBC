@@ -9,5 +9,5 @@ public interface Dao<T> {
 	void delete(T obj);
 	void deleById(Integer id);
 	T findById(Integer id);
-	List<T> findAll();	
+	List<T> findAll();
 }
