@@ -2,12 +2,12 @@ package model.dao;
 
 import java.util.List;
 
-public interface Dao {
+public interface Dao<T> {
 
-	void insert(Object obj);
-	void update(Object obj);
-	void delete(Object obj);
+	void insert(T obj);
+	void update(T obj);
+	void delete(T obj);
 	void deleById(Integer id);
-	Object findById(Integer id);
-	List<Object> findAll();	
+	T findById(Integer id);
+	List<T> findAll();	
 }
