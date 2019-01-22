@@ -10,13 +10,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 import database.exceptions.DbException;
 import database.util.Database;
 import model.entities.Department;
 import model.entities.Seller;
 
-public class SellerDaoJDBC implements Dao<Seller, Department> {
+public class SellerDaoJDBC implements Dao<Seller> {
 	
 	private Connection conn;
 	
@@ -141,6 +140,7 @@ public class SellerDaoJDBC implements Dao<Seller, Department> {
 
 	@Override
 	public List<Seller> findAll() {
+		
 		PreparedStatement st = null;
 		ResultSet rs = null;
 
@@ -196,7 +196,6 @@ public class SellerDaoJDBC implements Dao<Seller, Department> {
 		return dep;
 	}
 
-	@Override
 	public List<Seller> findByDepartment(Department department) {
 		
 		PreparedStatement st = null;
