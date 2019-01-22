@@ -1,4 +1,4 @@
-package db.util;
+package database.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
-import db.exceptions.DbException;
+import database.exceptions.DbException;
 
 public class Database {
 	

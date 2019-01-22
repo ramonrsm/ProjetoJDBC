@@ -1,6 +1,6 @@
 package model.dao;
 
-import db.util.Database;
+import database.util.Database;
 
 public class DaoFactory {
 	
